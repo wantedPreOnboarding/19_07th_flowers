@@ -1,8 +1,8 @@
 (function () {
   "use strict";
-  const namespace = "consts";
+  const namespace = "flowersConsts";
 
   window[namespace] = {
-    breakPoints: [],
+    breakPoints: [1024, 1141],
   };
 })();
