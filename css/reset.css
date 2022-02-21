@@ -1,0 +1,56 @@
+body,
+div,
+span,
+h2,
+h3,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+ul,
+dl,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  background: transparent;
+  cursor: pointer;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
