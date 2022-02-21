@@ -6,5 +6,5 @@
     desktop: 1141,
   };
 
-  flowers.export({ breakpoints: breakpoints });
+  exports({ breakpoints: breakpoints });
 })();
