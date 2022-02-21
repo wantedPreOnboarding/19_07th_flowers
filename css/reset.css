@@ -1,0 +1,40 @@
+body,
+div,
+span,
+h2,
+h3,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+button,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+ul,
+dl,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  background: transparent;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
