@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  border-bottom: 1px solid #ffcd32;
+  background-color: white;
+  z-index: 9000;
+}
+
+.header--wrap {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 1024px;
+  height: 87px;
+}
+
+.header--logo {
+  background: url("../../../assets/kukka.png") no-repeat -298px -612px;
+  width: 128px;
+  height: 52px;
+  float: left;
+  cursor: pointer;
+  margin: 0 60px 0 20px;
+}
+
+.header--nav {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+}
+
+.header--nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.header--nav a:hover {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ffcd32;
+}
+
+.header--nav li {
+  display: inline-block;
+  color: #222;
+  margin: 14px 20px;
+}
+
+.header--icons {
+  position: relative;
+  float: right;
+}
+
+.header--icons li {
+  display: inline-block;
+}
+
+.header--icons__user {
+  position: absolute;
+  background: url("../../../assets/kukka.png") no-repeat -38px -817px;
+  width: 25px;
+  height: 28px;
+  top: -50px;
+  right: 70px;
+  cursor: pointer;
+}
+
+.header--icons__cart {
+  position: absolute;
+  background: url("../../../assets/kukka.png") no-repeat -73px -817px;
+  width: 25px;
+  height: 28px;
+  top: -50px;
+  right: 20px;
+  cursor: pointer;
+}
