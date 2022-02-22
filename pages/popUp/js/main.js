@@ -36,7 +36,7 @@
   }
 
   function indexViewerRender() {
-    var $circles = $(".popup-slide__index-viewer > span");
+    var $circles = $(".popup-slide__index-viewer > button");
     $circles.removeClass("bgc-red");
     $circles.addClass("bgc-grey");
 
@@ -54,6 +54,15 @@
       } else {
         indexManager.set(indexManager.get() - 1);
       }
+    });
+
+    $(".popup-slide__index-viewer").on("click", function (event) {
+      if (event.target.tagName !== "BUTTON") return;
+      var selectedIndex = $(event.currentTarget)
+        .find("button")
+        .index($(event.target));
+
+      indexManager.set(selectedIndex);
     });
   });
 })();
