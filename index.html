@@ -24,6 +24,7 @@
     <script src="/js/config/module.js" defer></script>
     <script src="/js/utils/cssUnits.js" defer></script>
     <script src="/js/components/popUp/popUp.js" defer></script>
+    <script src="/js/components/header/header.js" defer></script>
     <script src="/js/consts/breakPoints.js" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
@@ -32,33 +33,33 @@
     <div class="wrap">
       <!-- header -->
       <div class="header">
-          <div class="header--wrap">
-            <h1 class="header--logo"></h1>
-            <!-- header list -->
-            <div class="header--nav">
-              <ul>
-                <li><a href="#movie">동영상</a></li>
-                <li><a href="#flower-class">플라워클래스</a></li>
-              </ul>
-            </div>
-            <!--- // header list -->
-            
-            <!-- icon list -->
-            <div class="header--icons">
-              <ul>
-                <li class="header--icons__user"><a href=""></a></li>
-                <li class="header--icons__cart"><a href=""></a></li>
-              </ul>
-            </div>
+        <div class="header--wrap">
+          <a href="#"><h1 class="header--logo"></h1></a>
+          <!-- header list -->
+          <div class="header--nav">
+            <ul>
+              <li><a href="#movie">동영상</a></li>
+              <li><a href="#flower-class">플라워클래스</a></li>
+            </ul>
           </div>
-          <!-- // icon list -->
-          
+          <!--- // header list -->
+
+          <!-- icon list -->
+          <div class="header--icons">
+            <ul>
+              <a href=""><li class="header--icons__user"></li></a>
+              <a href=""><li class="header--icons__cart"></li></a>
+            </ul>
+          </div>
+        </div>
+        <!-- // icon list -->
       </div>
+      <div class="header--shadow"></div>
       <!-- // header -->
       <!-- main -->
       <div class="main">
         <iframe src="" frameborder="0"></iframe>
-        <a name="flower-class"><h2>꽃과 함께 하는 일상, 플라워 클래스</h2></a>
+        <a id="flower-class"><h2>꽃과 함께 하는 일상, 플라워 클래스</h2></a>
         <!-- main slide -->
         <div class="main--slide">
           <button type="button" class="prev__btn"><</button>

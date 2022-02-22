@@ -11,8 +11,13 @@
   display: block;
   margin: 0 auto;
   padding: 20px 0;
-  width: 1024px;
   height: 87px;
+  max-width: 1024px;
+}
+
+.header--wrap.header--wrap__mobile {
+  height: 52px;
+  padding: 15px 0 0 20px;
 }
 
 .header--logo {
@@ -20,14 +25,25 @@
   width: 128px;
   height: 52px;
   float: left;
-  cursor: pointer;
   margin: 0 60px 0 20px;
 }
 
+.header--logo.header--logo__mobile {
+  background: url("../../../assets/kukka.png") no-repeat -766px -438px;
+  width: 334px;
+  height: 44px;
+  zoom: 0.5;
+}
+
 .header--nav {
+  display: block;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.header--nav.none {
+  display: none;
 }
 
 .header--nav a {
@@ -51,6 +67,11 @@
 .header--icons {
   position: relative;
   float: right;
+  /* top: 50px; */
+}
+
+.header--icons.header--t50 {
+  top: 55px;
 }
 
 .header--icons li {
@@ -64,7 +85,6 @@
   height: 28px;
   top: -50px;
   right: 70px;
-  cursor: pointer;
 }
 
 .header--icons__cart {
@@ -74,5 +94,38 @@
   height: 28px;
   top: -50px;
   right: 20px;
-  cursor: pointer;
+}
+
+.header--icons__cart.header--icons__cart__mobile {
+  zoom: 0.9;
+  top: -65px;
+  right: 20px;
+}
+
+.header--shadow {
+  position: fixed;
+  top: 88px;
+  width: 100%;
+  height: 2px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.header--shadow.header--shadow__mobile {
+  top: 53px;
 }
