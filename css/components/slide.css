@@ -9,14 +9,12 @@
     box-sizing: border-box;
     padding:0px;
 }
-
 .main--slide-btn{
     display: inline-block;
     width: 70px;
     height: 300px;
     position: relative;
 }
-
 .prev__btn {
     background: url('../../assets/kukka.png') no-repeat -1166px -252px;
 	width: 68px;
@@ -24,7 +22,6 @@
     position: absolute;
     top: calc(50% - 34px);
     left: calc(50% - 34px);
-
 }
 .next__btn {
     background: url('../../assets/kukka.png') no-repeat -1116px -500px;
@@ -40,7 +37,6 @@
     width:85%;
     height:100%;
 }
-
 .slide--active {
     float: left;
     width: 50%;
@@ -50,10 +46,9 @@
 }
 .slide__content--active {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 20px;
+    left: 30px;
 }
-
 .slide__content--active span{
     display: block;
     font-size:14px;
@@ -64,7 +59,6 @@
     font-size: 20px;
     font-weight: 700;
 }
-
 .slide--active img{
     width: 100%;
     height: 100%;
@@ -110,33 +104,7 @@
     font-weight: 700;
  }
 .tag__box span{
-    border-radius: 10px;
     font-size:10px;
     padding:2px 5px;
 }
-.tag__box--item:nth-child(1){
-    border:1px solid blueviolet;
-    color:blueviolet
-}
-.tag__box--item:nth-child(2){
-    border:1px solid #1DD1AD;
-    color:#1DD1AD
-}
-.tag__box--item:nth-child(3){
-    border:1px solid #FF9100;
-    color:#FF9100
-}
-.tag__box--item:nth-child(4){
-    border:1px solid #0A82FF;
-    color:#0A82FF
-}
-.tag__box--item:nth-child(5){
-    border:1px solid 	#FFBE0A;
-    color:	#FFBE0A
-}
-.tag__box--item:nth-child(6){
-    border:1px solid #46BEFF;
-    color:#46BEFF
-}
-
 
