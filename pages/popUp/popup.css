@@ -1,0 +1,34 @@
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.popup-slide__wrapper {
+  overflow: hidden;
+}
+
+.popup-slide__wrapper ul {
+  list-style: none;
+  font-size: 0;
+  white-space: nowrap;
+  position: relative;
+  height: inherit;
+  /* right: 20px; */
+}
+
+.popup-slide__wrapper li {
+  display: inline-block;
+  height: inherit;
+}
+
+.popup-slide__wrapper ul img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup__footer {
+  height: 34px;
+  padding-top: 6px;
+  padding-left: 3px;
+}
