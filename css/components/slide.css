@@ -1,144 +1,143 @@
 .main--slide {
-    display: block;
-    margin:0px auto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    max-width: 1400px;
-    max-height: 480px;
-    box-sizing: border-box;
-    padding:0px;
-    margin-bottom: 50px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 1400px;
+  max-height: 480px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 50px;
 }
-.main--slide-btn{
-    display: inline-block;
-    position: relative;
-    width: 70px;
-    height: 300px;
+.main--slide-btn {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 300px;
 }
-.main--slide-btn button{
-	width: 68px;
-	height: 68px;
-    position: absolute;
-    top:30%;
-    left:10%;
+.main--slide-btn button {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 .prev__btn {
-    background: url('../../assets/kukka.png') no-repeat -1166px -252px;
+  background: url("../../assets/kukka.png") no-repeat -1166px -252px;
 }
 
 .next__btn {
-    background: url('../../assets/kukka.png') no-repeat -1116px -500px;
+  background: url("../../assets/kukka.png") no-repeat -1116px -500px;
 }
 
 .main--slide-list {
-    display: inline-block;
-    list-style: none;
-    width:85%;
-    height:100%;
-    text-align: left;
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  text-align: left;
 }
 .slide--active {
-    float: left;  
-    width: 50%;
-    height: 100%;
-    padding-right: 10px;
-    position: relative;
-    min-height:120px;
-    cursor: pointer;
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-right: 10px;
+  position: relative;
+  min-height: 120px;
+  cursor: pointer;
 }
 .slide__content--active {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
 }
-.slide__content--active span{
-    display: block;
-    font-size:14px;
-    color:#424242;
+.slide__content--active span {
+  display: block;
+  font-size: 14px;
+  color: #424242;
 }
-.slide__content--active p{
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.slide--next__imageBox{
-    width: 100%;
-    height: 100%;
-    max-width: 480px;
-    display: inline-block; 
-    min-height:120px;
-    overflow: hidden;
-}
-.slide--active img{
-    width: 100%;
-    height: 100%;
+.slide__content--active p {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.slide--active img:hover{  
-    width: 102%;
-    height: 102%;
+.slide--next__imageBox {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  display: inline-block;
+  min-height: 120px;
+  overflow: hidden;
+}
+.slide--active img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide--active img:hover {
+  width: 102%;
+  height: 102%;
 }
 .slide--next {
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    padding-left: 10px;
-    cursor: pointer;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  cursor: pointer;
 }
-.slide--next hr{
-    color:#424242;
+.slide--next hr {
+  color: #424242;
 }
 .slide--next-item {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 50%;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
 
 .slide--next-seconditem {
-    display: block;
-    width: 100%;
-    height: 50%; 
+  display: block;
+  width: 100%;
+  height: 50%;
 }
-.slide--next__imageBox{
-    display: inline-block;
-    width: 50%;
-    height: 100%; 
-    min-height:120px; 
-    overflow: hidden;
-}
-
-.slide--next img {  
-    width:100%;
-    height:100%;
+.slide--next__imageBox {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  min-height: 120px;
+  overflow: hidden;
 }
 
-.slide--next img:hover{   
-    width:102%;
-    height:102%;
+.slide--next img {
+  width: 100%;
+  height: 100%;
 }
 
-.slide__content--info{
-    width: 50%;
-    height: 100%;
-    float: right;
-    min-height: 120px;
-    padding-left:10px;
+.slide--next img:hover {
+  width: 102%;
+  height: 102%;
 }
 
-.slide__content--info h3{
-    font-size:14px;
-    font-weight: 700;
-}
-.slide__content--info >span{
-    font-size:13px;
-    font-weight: 700;
-}
-.tag__box span{
-    font-size:10px;
-    padding:2px 5px;
+.slide__content--info {
+  width: 50%;
+  height: 100%;
+  float: right;
+  min-height: 120px;
+  padding-left: 10px;
 }
 
+.slide__content--info h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.slide__content--info > span {
+  font-size: 13px;
+  font-weight: 700;
+}
+.tag__box span {
+  font-size: 10px;
+  padding: 2px 5px;
+}
