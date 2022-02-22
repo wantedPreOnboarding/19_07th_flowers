@@ -11,26 +11,25 @@
 }
 .main--slide-btn{
     display: inline-block;
+    position: relative;
     width: 70px;
     height: 300px;
-    position: relative;
+}
+.main--slide-btn button{
+	width: 68px;
+	height: 68px;
+    position: absolute;
+    top:30%;
+    left:10%;
 }
 .prev__btn {
     background: url('../../assets/kukka.png') no-repeat -1166px -252px;
-	width: 68px;
-	height: 68px;
-    position: absolute;
-    top: calc(50% - 34px);
-    left: calc(50% - 34px);
 }
+
 .next__btn {
     background: url('../../assets/kukka.png') no-repeat -1116px -500px;
-	width: 68px;
-	height: 68px;
-    position: absolute;
-    top: calc(50% - 34px);
-    left: calc(50% - 34px);
 }
+
 .main--slide-list {
     display: inline-block;
     list-style: none;
@@ -38,7 +37,7 @@
     height:100%;
 }
 .slide--active {
-    float: left;
+    float: left;  
     width: 50%;
     height: 100%;
     padding-right: 10px;
@@ -52,7 +51,7 @@
 .slide__content--active span{
     display: block;
     font-size:14px;
-    color:rgba(0,0,0,0.6);
+    color:#424242;
 }
 .slide__content--active p{
     display: block;
@@ -62,6 +61,7 @@
 .slide--active img{
     width: 100%;
     height: 100%;
+    max-width: 480x;
     display: inline-block; 
 }
 .slide--next {
@@ -71,7 +71,7 @@
     padding-left: 10px;
 }
 .slide--next hr{
-    color:rgba(0,0,0,0.6);
+    color:#424242;
 }
 .slide--next-item {
     display: block;
@@ -79,30 +79,34 @@
     width: 100%;
     height: 50%;
 }
+
 .slide--next-seconditem {
     display: block;
     width: 100%;
     height: 50%; 
 }
+
 .slide--next img {  
     width: 50%;
     height: 100%;
     float: inline-start;
     max-width: 240px;
 }
+
 .slide__content--info{
     width: 50%;
     height: 100%;
     float: right;
 }
+
 .slide__content--info h3{
-   font-size:14px;
-   font-weight: 700;
+    font-size:14px;
+    font-weight: 700;
 }
 .slide__content--info >span{
     font-size:13px;
     font-weight: 700;
- }
+}
 .tag__box span{
     font-size:10px;
     padding:2px 5px;

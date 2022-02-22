@@ -1,30 +1,56 @@
 $(document).ready(function() {
-  var tagList=[
-    {store:"광화문점",color:"#8A2BE2"},
-    {store:"잠실점",color:"#1DD1AD"},
-    {store:"월계점",color:"#FF9100"},
-    {store:"구로점",color:"#0A82FF"},
-    {store:"송파점",color:"#FFBE0A"},
-    {store:"부산동래점",color:"#46BEFF"}]
-  
-  for (i=0; i<tagList.length; i++){
-    console.log(tagList[i].store);
-    var $span=$("<span></span>").css("margin-right","5px").css("border","1px solid "+tagList[i].color).css("color",tagList[i].color).text(tagList[i].store);
-    $(".tag__box").append($span)
+
+  function slideMobileGroup() {
+    $('.slide--active').css('float','none').css('display','block').css('width','100%');
+    $('.slide--next').css('display','block').css('width','100%').css('padding-left','0px');
+    $('.main--slide').css('max-width','none').css('max-height','none');
+    $('.main--slide-btn').css('display','none');
   }
 
-  var slideList = [{imageId:"0", imageName:"클래식 핸드타이드(1/1 ~ 1/15)"}, {imageId:"1", imageName:"들꽃 화병꽂이(1/10 ~ 1/16)"}, {imageId:"2",  imageName:"롬앤로우 센터피스 (1/17 ~ 1/23)"}]   
+  function slideDesktopGroup() {
+    $('.slide--active').css('float','left').css('width','50%');
+    $('.slide--next').css('display','inline-block').css('width','50%').css('padding-left','10px'); 
+    $('.main--slide').css('max-width','1200px').css('max-height','480px');
+    $('.main--slide-btn').css('display','inline-block');
+  }
+
+  var breakpoints = require('breakpoints');
+
+  $(window).resize(function () {
+      if ($(window).width() < breakpoints.tablet) {
+        slideMobileGroup();
+        console.log('mobile')
+      } else {
+        slideDesktopGroup();
+        console.log('desktop')
+      };
+  });
+
+  var tagList=[
+    {store:'광화문점',color:'#8A2BE2'},
+    {store:'잠실점',color:'#1DD1AD'},
+    {store:'월계점',color:'#FF9100'},
+    {store:'구로점',color:'#0A82FF'},
+    {store:'송파점',color:'#FFBE0A'},
+    {store:'부산동래점',color:'#46BEFF'}]
+  
+  for (i=0; i<tagList.length; i++){
+    var $span=$('<span></span>').css('margin-right','5px').css('border','1px solid '+tagList[i].color).css('color',tagList[i].color).text(tagList[i].store);
+    $('.tag__box').append($span)
+  }
+
+  var slideList = [{imageId:'0', imageName:'클래식 핸드타이드(1/1 ~ 1/15)'}, {imageId:'1', imageName:'들꽃 화병꽂이(1/10 ~ 1/16)'}, {imageId:'2',  imageName:'롬앤로우 센터피스 (1/17 ~ 1/23)'}]   
   var state=1;
 
   function changeImage(first,second,third){
-    $(".slide--image__active").attr("src","assets/slide_image"+first+".jpeg"),
-    $(".slide--image2").attr("src","assets/slide_image"+second+".jpeg"),
-    $(".slide--image3").attr("src","assets/slide_image"+third+".jpeg"),
-    $(".slide__content--firstTitle").text(slideList[second].imageName),
-    $(".slide__content--secTitle").text(slideList[third].imageName)
+    $('.slide--image__active').attr('src','assets/slide_image'+first+'.jpeg'),
+    $('.slide--image2').attr('src','assets/slide_image'+second+'.jpeg'),
+    $('.slide--image3').attr('src','assets/slide_image'+third+'.jpeg'),
+    $('.slide__content--firstTitle').text(slideList[second].imageName),
+    $('.slide__content--secTitle').text(slideList[third].imageName)
   }
 
-  $(".next__btn").click(function() {
+  $('.next__btn').click(function() {
     if (state ===2){
       changeImage(state,state-2,state-1),
       state=0
@@ -38,7 +64,7 @@ $(document).ready(function() {
       state++
     } 
   });
-  $(".prev__btn").click(function() {	
+  $('.prev__btn').click(function() {	
     if (state ===2){
       changeImage(state-1,state,state-2)
       state=0
