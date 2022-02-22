@@ -1,18 +1,27 @@
 (function () {
     "use strict";
 
-    if (matchMedia("screen and (max-width: 1024px)").matches) {
-        $('.nav--mobile').removeAtt('style')
-    } else {
+    function navMobileGroup() {
+        $('.nav--mobile').removeAttr('style');
+    }
+
+    function navDesktopGroup() {
         $('.nav--mobile').css('display', 'none');
     }
 
-    $(window).resize(function () {
-        if ($(window).width() < 1024) {
-            $('.nav--mobile').removeAtt('style')
-        } else {
-            $('.nav--mobile').css('display', 'none');
-        }
-    });
+    var breakpoints = require('breakpoints');
 
+    if (matchMedia("screen and (max-width:" + breakpoints.tablet + "px)").matches) {
+        navMobileGroup()
+    } else {
+        navDesktopGroup()
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() < breakpoints.tablet) {
+            navMobileGroup();
+        } else {
+            navDesktopGroup();
+        };
+    });
 })();
