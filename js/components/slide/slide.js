@@ -11,7 +11,7 @@ $(document).ready(function() {
     $('.slide__content--active p').css('font-size','16px');
     $('.slide__content--info h3').css('font-size','12px');
     $('.slide__content--info >span').css('font-size','10px');
-    $('.tag__box span').css('font-size','6px').css('padding','0px 2px');
+    $('.tag__box span').css('font-size','8px').css('padding','0px 2px');
   }
 
   function slideDesktopGroup() {
