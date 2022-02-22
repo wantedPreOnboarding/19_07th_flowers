@@ -1,2 +1,4 @@
-@import url("header/index.css");
-@import url("nav/index.css");
+@import url("./header/index.css");
+@import url("./nav/index.css");
+@import url("./banner.css");
+@import url("./footer.css");
