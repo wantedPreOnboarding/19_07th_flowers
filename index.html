@@ -12,11 +12,14 @@
   <meta property="og:title" content="꾸까 - kukka" />
   <meta property="og:description"
     content="그 시즌 가장 예쁜 꽃을 받아보는 꽃 정기구독. 당일 배송되는 꽃바구니와 전국꽃배달서비스, 꾸까 오프라인 매장에서 진행하는 플라워클래스와 원데이클래스." />
+  <link href="/css/index.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="./js/utils/importModule.js" defer></script>
-  <script src="./js/consts/breakPoints.js" defer></script>
-  <link href="/css/index.css" rel="stylesheet">
+  <script src="/js/config/module.js" defer></script>
+  <script src="/js/utils/cssUnits.js" defer></script>
+  <script src="/js/components/popUp/popUp.js" defer></script>
+  <script src="/js/consts/breakPoints.js" defer></script>
+  <script src="/js/main.js" defer></script>
 </head>
 
 <body>
@@ -55,7 +58,7 @@
       <!-- main slide -->
       <div class="main--slide">
         <button type="button" class="prev__btn">
-          << /button>
+          < </button>
             <ul class="main--slide-list">
               <li class="slide--active">
                 <img
@@ -87,14 +90,16 @@
       <div class="banner--brand">
         <div>
           <h2 class="banner__title">꾸까 브랜드 이야기</h2>
-          <span class="banner__contents">꽃으로 라이프 스타일 만들어가는 <br> kukua의 문화를 소개해요.</span>
+          <span class="banner__contents">꽃으로 라이프 스타일 만들어가는 <br />
+            kukua의 문화를 소개해요.</span>
           <button class="banner__btn">Brand story</button>
         </div>
       </div>
       <div class="banner--offline">
         <div>
           <h2 class="banner__title">꾸까 오프라인 쇼룸</h2>
-          <span class="banner__contents">꽃을 가까이서 만져보고 향기도 맡아보고, <br> 꽃 속에서 작은 휴식을 누릴수 있는 kuka 의 오프라인 쇼룸</span>
+          <span class="banner__contents">꽃을 가까이서 만져보고 향기도 맡아보고, <br />
+            꽃 속에서 작은 휴식을 누릴수 있는 kuka 의 오프라인 쇼룸</span>
           <button class="banner__btn">꾸까 쇼룸 안내</button>
         </div>
       </div>
@@ -138,8 +143,8 @@
         </ul>
       </div>
     </div>
+    <!-- // wrap -->
   </div>
-  <!-- // wrap -->
   <!-- popup -->
   <div class="popup"></div>
 </body>
