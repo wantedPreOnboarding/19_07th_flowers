@@ -56,9 +56,10 @@ $(window).resize(function () {
     }
 });
 
+//부드럽게 이동
 $('a').click(function () {
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
+        scrollTop: ($($.attr(this, 'href')).offset().top) - 90
     }, 500);
     return false;
 });
