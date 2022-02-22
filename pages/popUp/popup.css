@@ -58,6 +58,19 @@ body {
   background: url("/assets/kukka.png") no-repeat -272px -699px;
 }
 
+.popup-slide__index-viewer {
+  position: absolute;
+  bottom: 0px;
+  left: 45.5%;
+}
+
+.popup-slide__index-viewer > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .popup__footer {
   position: relative;
   height: 34px;
