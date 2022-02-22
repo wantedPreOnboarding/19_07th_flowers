@@ -1,33 +1,44 @@
 .main--slide {
     display: block;
     margin:0 auto;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     position: relative;
     max-width: 1200px;
     max-height: 480px;
     box-sizing: border-box;
+    padding:0px;
+}
+
+.main--slide-btn{
+    display: inline-block;
+    width: 70px;
+    height: 300px;
+    position: relative;
 }
 
 .prev__btn {
-    display: inline-block;
     background: url('../../assets/kukka.png') no-repeat -1166px -252px;
 	width: 68px;
-	height: 69px;
-    margin: auto;
-}
+	height: 68px;
+    position: absolute;
+    top: calc(50% - 34px);
+    left: calc(50% - 34px);
 
+}
+.next__btn {
+    background: url('../../assets/kukka.png') no-repeat -1116px -500px;
+	width: 68px;
+	height: 68px;
+    position: absolute;
+    top: calc(50% - 34px);
+    left: calc(50% - 34px);
+}
 .main--slide-list {
     display: inline-block;
     list-style: none;
     width:85%;
     height:100%;
-}
-.next__btn {
-    display: inline-block;
-    background: url('../../assets/kukka.png') no-repeat -1116px -500px;
-	width: 68px;
-	height: 69px;
 }
 
 .slide--active {

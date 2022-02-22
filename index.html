@@ -24,6 +24,7 @@
     <script src="/js/config/module.js" defer></script>
     <script src="/js/utils/cssUnits.js" defer></script>
     <script src="/js/components/popUp/popUp.js" defer></script>
+    <script src="/js/components/slide/slide.js" defer></script>
     <script src="/js/consts/breakPoints.js" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
@@ -62,7 +63,7 @@
         <h2>꽃과 함께 하는 일상, 플라워 클래스</h2>
         <!-- main slide -->
         <div class="main--slide">
-          <button type="button" class="prev__btn"></button>
+          <div class="main--slide-btn"><button type="button" class="prev__btn"></button></div>
           <ul class="main--slide-list">
             <li class="slide--active">
               <img
@@ -113,7 +114,8 @@
                 </div> 
               </div> 
             </li>
-          </ul><button type="button" class="next__btn"></button>
+          </ul>
+          <div class="main--slide-btn"><button type="button" class="next__btn"></button></div>
         </div>
       </div>
       <!-- // main -->
