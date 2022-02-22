@@ -1,7 +1,29 @@
 .banner {
-  width: 100%;
   background: #f3f0f0;
   overflow: hidden;
+}
+
+.banner.mobile {
+  margin: 10px;
+  padding: 90px 24px 30px 25px;
+  background: #f7f7f7;
+}
+
+.banner--mobile {
+  display: none;
+}
+
+.banner--mobile h2 {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.banner--mobile button {
+  display: block;
+  float: right;
+  margin-bottom: 20px;
 }
 
 .banner--brand {
@@ -9,6 +31,12 @@
   float: left;
   width: 50%;
   min-height: 250px;
+  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png)
+    no-repeat center/cover;
+}
+
+.banner--brand.mobile {
+  width: 100%;
   background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png)
     no-repeat center/cover;
 }
@@ -41,6 +69,13 @@
   padding: 15px 80px;
   border: #222 1px solid;
   border-radius: 25px;
+}
+
+.banner--offline.mobile {
+  display: none;
+  width: 100%;
+  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/offline_201225_w.png)
+    no-repeat center/cover;
 }
 
 .banner--offline {
