@@ -28,11 +28,11 @@
     <script src="/js/components/popUp/popUp.js" defer></script>
     <script src="/js/components/header/header.js" defer></script>
     <script src="/js/components/nav/nav.js" defer></script>
+    <script src="/js/components/slide/slide.js" defer></script>
     <script src="/js/components/banner/banner.js" defer></script>
     <script src="/js/components/footer/footer.js" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
-
   <body>
     <!-- wrap -->
     <div class="wrap">
@@ -62,6 +62,7 @@
           </div>
         </div>
         <!-- // icon list -->
+        <div class="header--divide"></div>
       </div>
       <div class="header--shadow"></div>
       <!-- // header -->
@@ -82,13 +83,15 @@
         <a id="flower-class"><h2>꽃과 함께 하는 일상, 플라워 클래스</h2></a>
         <!-- main slide -->
         <div class="main--slide">
-          <button type="button" class="prev__btn"></button>
+          <div class="main--slide-btn">
+            <button type="button" class="prev__btn"></button>
+          </div>
           <ul class="main--slide-list">
             <li class="slide--active">
               <img
-                src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg"
+                src="assets/slide_image0.jpeg"
                 alt="image1"
-                class="image"
+                class="slide--image__active"
               />
               <div class="slide__content--active">
                 <span>새로운 일상을 경험하는</span>
@@ -98,46 +101,37 @@
             <li class="slide--next">
               <div class="slide--next-item">
                 <img
-                  src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg"
+                  src="assets/slide_image1.jpeg"
                   alt="image2"
-                  class="image"
+                  class="slide--image2"
                 />
                 <div class="slide__content--info">
-                  <h3>들꽃 화병 꽃이(1/10)~(1/16)</h3>
+                  <h3 class="slide__content--firstTitle">
+                    들꽃 화병꽂이(1/10 ~ 1/16)
+                  </h3>
                   <span>79,700원</span>
-                  <div class="tag__box">
-                    <span class="tag__box--item">광화문점</span>
-                    <span class="tag__box--item">잠실점</span>
-                    <span class="tag__box--item">월계점</span>
-                    <span class="tag__box--item">구로점</span>
-                    <span class="tag__box--item">송파점</span>
-                    <span class="tag__box--item">부산동래점</span>
-                  </div>
+                  <div class="tag__box"></div>
                 </div>
               </div>
-
               <div class="slide--next-seconditem">
                 <img
-                  src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg"
+                  src="assets/slide_image2.jpeg"
                   alt="image3"
-                  class="image"
+                  class="slide--image3"
                 />
                 <div class="slide__content--info">
-                  <h3>롬앤로우 센터피스 (1/17)~(1/23)</h3>
+                  <h3 class="slide__content--secTitle">
+                    롬앤로우 센터피스 (1/17 ~ 1/23)
+                  </h3>
                   <span>79,000원</span>
-                  <div class="tag__box">
-                    <span class="tag__box--item">광화문점</span>
-                    <span class="tag__box--item">잠실점</span>
-                    <span class="tag__box--item">월계점</span>
-                    <span class="tag__box--item">구로점</span>
-                    <span class="tag__box--item">송파점</span>
-                    <span class="tag__box--item">부산동래점</span>
-                  </div>
+                  <div class="tag__box"></div>
                 </div>
               </div>
             </li>
           </ul>
-          <button type="button" class="next__btn"></button>
+          <div class="main--slide-btn">
+            <button type="button" class="next__btn"></button>
+          </div>
         </div>
       </div>
       <!-- // main -->
