@@ -7,6 +7,7 @@
     "/pages/popUp/assets/20220221_배송안내.png",
     "/pages/popUp/assets/20220221_배송안내.png",
   ];
+
   var indexManager = (function () {
     var currentIndex = 0;
 
@@ -58,6 +59,7 @@
 
     $(".popup-slide__index-viewer").on("click", function (event) {
       if (event.target.tagName !== "BUTTON") return;
+
       var selectedIndex = $(event.currentTarget)
         .find("button")
         .index($(event.target));
