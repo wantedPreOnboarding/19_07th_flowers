@@ -1,0 +1,39 @@
+.banner {
+  background: #f3f0f0;
+  overflow: hidden;
+}
+
+.banner--brand {
+  float: left;
+  /* width: 759.5px; */
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__title {
+  font-size: 20px;
+}
+
+.banner__contents {
+  line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.banner__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 80px;
+  border: #222 1px solid;
+  border-radius: 25px;
+}
+
+.banner--offline {
+  float: right;
+  /* width: 759.5px; */
+  background-image: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
