@@ -4,7 +4,17 @@ ul {
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
+.popup {
+  position: absolute;
+  margin: 0 auto;
+}
+
 .popup-slide__wrapper {
+  position: relative;
   overflow: hidden;
 }
 
@@ -13,22 +23,83 @@ ul {
   font-size: 0;
   white-space: nowrap;
   position: relative;
-  height: inherit;
-  /* right: 20px; */
 }
 
 .popup-slide__wrapper li {
   display: inline-block;
-  height: inherit;
+  width: 100%;
 }
 
 .popup-slide__wrapper ul img {
   width: 100%;
-  height: 100%;
+}
+
+.popup-slide__btn--prev,
+.popup-slide__btn--next {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 48%;
+  width: 17px;
+  height: 33px;
+}
+
+.popup:hover .popup-slide__btn--prev,
+.popup:hover .popup-slide__btn--next {
+  display: block;
+}
+
+.popup-slide__btn--prev {
+  left: 1rem;
+  background: url("/assets/kukka.png") no-repeat -201px -698px;
+}
+.popup-slide__btn--next {
+  right: 1rem;
+  background: url("/assets/kukka.png") no-repeat -272px -699px;
+}
+
+.popup-slide__index-viewer {
+  position: absolute;
+  bottom: 0px;
+  left: 45.5%;
+}
+
+.popup-slide__index-viewer > button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 .popup__footer {
+  position: relative;
   height: 34px;
   padding-top: 6px;
   padding-left: 3px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  background: url("/assets/base.png") no-repeat -44px -1083px;
+  width: 15px;
+  height: 15px;
+}
+
+.popup__close--option-label,
+#popup__close--option-check {
+  cursor: pointer;
+}
+
+.popup__close--option-label {
+  position: relative;
+  bottom: 3px;
+  user-select: none;
+}
+
+#popup__close--option-check {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
 }

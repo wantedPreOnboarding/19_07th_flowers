@@ -1,0 +1,55 @@
+.nav--mobile {
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+}
+
+.nav--mobile ul {
+  list-style: none;
+}
+
+.nav--mobile li {
+  display: inline-block;
+  margin-top: 5px;
+  width: 24%;
+  color: #222;
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 200;
+}
+
+.nav--mobile__category {
+  background: url("../../../assets/kukka.png") no-repeat -1202px -550px;
+  margin: 3px auto;
+  width: 34px;
+  height: 26px;
+  zoom: 0.65;
+}
+
+.nav--mobile__event {
+  background: url("../../../assets/kukka.png") no-repeat -1207px -497px;
+  margin: 3px auto;
+  width: 38px;
+  height: 38px;
+  zoom: 0.5;
+}
+
+.nav--mobile__mypage {
+  background: url("../../../assets/kukka.png") no-repeat -802px -612px;
+  margin: 3px auto;
+  width: 48px;
+  height: 48px;
+  zoom: 0.45;
+}
+
+.nav--mobile__cart {
+  background: url("../../../assets/kukka.png") no-repeat -1208px -612px;
+  margin: 3px auto;
+  width: 42px;
+  height: 47px;
+  zoom: 0.43;
+}
