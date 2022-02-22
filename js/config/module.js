@@ -1,5 +1,5 @@
 (function () {
-  const namespace = "flowers";
+  var namespace = "flowers";
 
   window[namespace] = {};
 
