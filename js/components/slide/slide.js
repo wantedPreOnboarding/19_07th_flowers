@@ -3,26 +3,38 @@ $(document).ready(function() {
   function slideMobileGroup() {
     $('.slide--active').css('float','none').css('display','block').css('width','100%');
     $('.slide--next').css('display','block').css('width','100%').css('padding-left','0px');
+    $('.slide--next img').css('width','30%');
+    $('.slide__content--info').css('width','70%');
     $('.main--slide').css('max-width','none').css('max-height','none');
     $('.main--slide-btn').css('display','none');
+    $('.slide__content--active span').css('font-size','12px');
+    $('.slide__content--active p').css('font-size','16px');
+    $('.slide__content--info h3').css('font-size','12px');
+    $('.slide__content--info >span').css('font-size','10px');
+    $('.tag__box span').css('font-size','6px').css('padding','0px 2px');
   }
 
   function slideDesktopGroup() {
     $('.slide--active').css('float','left').css('width','50%');
     $('.slide--next').css('display','inline-block').css('width','50%').css('padding-left','10px'); 
+    $('.slide--next img').css('width','50%');
+    $('.slide__content--info').css('width','50%');
     $('.main--slide').css('max-width','1200px').css('max-height','480px');
     $('.main--slide-btn').css('display','inline-block');
+    $('.slide__content--active span').css('font-size','14px');
+    $('.slide__content--active p').css('font-size','20px');
+    $('.slide__content--info h3').css('font-size','14px');
+    $('.slide__content--info >span').css('font-size','13px');
+    $('.tag__box span').css('font-size','10px').css('padding','2px 5px');
   }
 
   var breakpoints = require('breakpoints');
 
   $(window).resize(function () {
-      if ($(window).width() < breakpoints.tablet) {
+      if ($(window).width() < breakpoints.tabletMini) {
         slideMobileGroup();
-        console.log('mobile')
       } else {
         slideDesktopGroup();
-        console.log('desktop')
       };
   });
 

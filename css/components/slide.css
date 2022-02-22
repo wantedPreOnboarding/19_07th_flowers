@@ -1,6 +1,7 @@
 .main--slide {
     display: block;
-    margin:0 auto;
+    margin:0px auto;
+    text-align: center;
     width: 100%;
     height: 100%;
     position: relative;
@@ -35,6 +36,7 @@
     list-style: none;
     width:85%;
     height:100%;
+    text-align: left;
 }
 .slide--active {
     float: left;  
@@ -42,6 +44,7 @@
     height: 100%;
     padding-right: 10px;
     position: relative;
+    min-height:120px;
 }
 .slide__content--active {
     position: absolute;
@@ -61,8 +64,9 @@
 .slide--active img{
     width: 100%;
     height: 100%;
-    max-width: 480x;
+    max-width: 480px;
     display: inline-block; 
+    min-height:120px;
 }
 .slide--next {
     display: inline-block;
@@ -88,15 +92,16 @@
 
 .slide--next img {  
     width: 50%;
-    height: 100%;
-    float: inline-start;
-    max-width: 240px;
+    height: 100%; 
+    min-height:120px;
 }
 
 .slide__content--info{
     width: 50%;
     height: 100%;
     float: right;
+    min-height: 120px;
+    padding-left:10px;
 }
 
 .slide__content--info h3{
