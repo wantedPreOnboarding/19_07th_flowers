@@ -3,7 +3,7 @@
 
   window[namespace] = {};
 
-  window.require = function (key) {
+  require = function (key) {
     return this[namespace][key];
   };
 
