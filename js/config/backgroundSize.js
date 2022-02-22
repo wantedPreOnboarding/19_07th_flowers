@@ -74,8 +74,7 @@
 
         $.data(elem, "bgsImg", $img[0]);
 
-        pos = // Firefox, Chrome (for debug)
-        (
+        pos = ( // Firefox, Chrome (for debug)
           $.css(elem, "backgroundPosition") ||
           // IE8
           $.css(elem, "backgroundPositionX") +
@@ -95,8 +94,6 @@
         $.css(elem, "zIndex") == "auto" && (elem.style.zIndex = 0);
         $.css(elem, "position") == "static" &&
           (elem.style.position = "relative");
-
-        $.refreshBackgroundImage(elem);
       } else {
         $.refreshBackground(elem);
       }
@@ -112,7 +109,7 @@
     set: function (elem, value) {
       // if the element has a backgroundSize, refresh its background
       return $.data(elem, "bgsImg")
-        ? $.refreshBackgroundImage(elem, value)
+        ? ""
         : // otherwise set the background-image normally
           value;
     },
