@@ -25,6 +25,7 @@
     <script src="/js/utils/cssUnits.js" defer></script>
     <script src="/js/components/popUp/popUp.js" defer></script>
     <script src="/js/components/header/header.js" defer></script>
+    <script src="/js/components/nav/nav.js" defer></script>
     <script src="/js/consts/breakPoints.js" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
@@ -38,8 +39,12 @@
           <!-- header list -->
           <div class="header--nav">
             <ul>
-              <li><a href="#movie">동영상</a></li>
-              <li><a href="#flower-class">플라워클래스</a></li>
+              <li>
+                <a href="#movie">동영상</a>
+              </li>
+              <li>
+                <a href="#flower-class">플라워클래스</a>
+              </li>
             </ul>
           </div>
           <!--- // header list -->
@@ -53,6 +58,7 @@
           </div>
         </div>
         <!-- // icon list -->
+        <div class="header--divide"></div>
       </div>
       <div class="header--shadow"></div>
       <!-- // header -->
@@ -116,6 +122,36 @@
       </div>
       <!-- footer -->
       <div class="footer">
+        <!-- nav -->
+        <div class="nav--mobile">
+          <ul>
+            <a href="">
+              <li>
+                <div class="nav--mobile__category"></div>
+                <span>카테고리</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="nav--mobile__event"></div>
+                <span>이벤트</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="nav--mobile__mypage"></div>
+                <span>마이꾸까</span>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="nav--mobile__cart"></div>
+                <span>장바구니</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <!-- //nav -->
         <ul class="footer--icons">
           <li class="facebook--icon">
             <a href="https://ko-kr.facebook.com/kukka.kr/"></a>
@@ -155,6 +191,7 @@
           <li><a href="/">제휴안내</a></li>
         </ul>
       </div>
+      <!-- //footer -->
     </div>
     <!-- // wrap -->
   </body>
