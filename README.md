@@ -80,18 +80,18 @@
     - CSS로만 레이아웃 구성
     - SNS아이콘 클릭 시 링크 이동 (새 창)
 
-## 7. 💿 설치 및 실행 방법
+## 6. 💿 설치 및 실행 방법
 
 Project Clone
 
 ```bash
 $ git clone https://github.com/wantedPreOnboarding/19_07th_flowers.git
 ```
-## 8. 🎨 지원 가능한 브라우저 
+## 7. 🎨 지원 가능한 브라우저 
 
 internet Explorer 8 + / chromium / webkit
 
-## 9. 🛠️ 기술 스택
+## 8. 🛠️ 기술 스택
 
 <div>
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
