@@ -27,11 +27,11 @@
     <script src="/js/components/popUp/popUp.js" defer></script>
     <script src="/js/components/header/header.js" defer></script>
     <script src="/js/components/nav/nav.js" defer></script>
+    <script src="/js/components/slide/slide.js" defer></script>
     <script src="/js/components/banner/banner.js" defer></script>
     <script src="/js/components/footer/footer.js" defer></script>
     <script src="/js/main.js" defer></script>
   </head>
-
   <body>
     <!-- wrap -->
     <div class="wrap">
@@ -79,66 +79,69 @@
             allowfullscreen
           ></iframe
         ></a>
-        <a id="flower-class"><h2>꽃과 함께 하는 일상, 플라워 클래스</h2></a>
-        <!-- main slide -->
-        <div class="main--slide">
-          <button type="button" class="prev__btn"></button>
-          <ul class="main--slide-list">
-            <li class="slide--active">
-              <img
-                src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/3/class_2022_home_web_R0tReO1.jpeg"
-                alt="image1"
-                class="image"
-              />
-              <div class="slide__content--active">
-                <span>새로운 일상을 경험하는</span>
-                <p>1월 플라워 클래스 ></p>
-              </div>
-            </li>
-            <li class="slide--next">
-              <div class="slide--next-item">
-                <img
-                  src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/106/img_%EC%98%A4%EC%95%84%EC%8B%9C%EC%8A%A4-%EB%A6%AC%EC%8A%A4.jpg"
-                  alt="image2"
-                  class="image"
-                />
-                <div class="slide__content--info">
-                  <h3>들꽃 화병 꽃이(1/10)~(1/16)</h3>
-                  <span>79,700원</span>
-                  <div class="tag__box">
-                    <span class="tag__box--item">광화문점</span>
-                    <span class="tag__box--item">잠실점</span>
-                    <span class="tag__box--item">월계점</span>
-                    <span class="tag__box--item">구로점</span>
-                    <span class="tag__box--item">송파점</span>
-                    <span class="tag__box--item">부산동래점</span>
+        <section>
+          <a id="flower-class"
+            ><h2>꽃과 함께 하는 일상, <strong>플라워 클래스</strong></h2></a
+          >
+          <!-- main slide -->
+          <div class="main--slide">
+            <div class="main--slide-btn">
+              <button type="button" class="prev__btn"></button>
+            </div>
+            <ul class="main--slide-list">
+              <li class="slide--active">
+                <div class="slide--active__imageBox">
+                  <img
+                    src="assets/slide_image0.jpeg"
+                    alt="image1"
+                    class="slide--image__active"
+                  />
+                </div>
+                <div class="slide__content--active">
+                  <span>새로운 일상을 경험하는</span>
+                  <p>1월 플라워 클래스 ></p>
+                </div>
+              </li>
+              <li class="slide--next">
+                <div class="slide--next-item">
+                  <div class="slide--next__imageBox">
+                    <img
+                      src="assets/slide_image1.jpeg"
+                      alt="image2"
+                      class="slide--image2"
+                    />
+                  </div>
+                  <div class="slide__content--info">
+                    <h3 class="slide__content--firstTitle">
+                      들꽃 화병꽂이(1/10 ~ 1/16)
+                    </h3>
+                    <span>79,700원</span>
+                    <div class="tag__box"></div>
                   </div>
                 </div>
-              </div>
-
-              <div class="slide--next-seconditem">
-                <img
-                  src="https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ClassProductGroup/107/img_%ED%81%B4%EB%9E%98%EC%8B%9D-%ED%95%B8%EB%93%9C%ED%83%80%EC%9D%B4%EB%93%9C.jpg"
-                  alt="image3"
-                  class="image"
-                />
-                <div class="slide__content--info">
-                  <h3>롬앤로우 센터피스 (1/17)~(1/23)</h3>
-                  <span>79,000원</span>
-                  <div class="tag__box">
-                    <span class="tag__box--item">광화문점</span>
-                    <span class="tag__box--item">잠실점</span>
-                    <span class="tag__box--item">월계점</span>
-                    <span class="tag__box--item">구로점</span>
-                    <span class="tag__box--item">송파점</span>
-                    <span class="tag__box--item">부산동래점</span>
+                <div class="slide--next-seconditem">
+                  <div class="slide--next__imageBox">
+                    <img
+                      src="assets/slide_image2.jpeg"
+                      alt="image3"
+                      class="slide--image3"
+                    />
+                  </div>
+                  <div class="slide__content--info">
+                    <h3 class="slide__content--secTitle">
+                      롬앤로우 센터피스 (1/17 ~ 1/23)
+                    </h3>
+                    <span>79,000원</span>
+                    <div class="tag__box"></div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <button type="button" class="next__btn"></button>
-        </div>
+              </li>
+            </ul>
+            <div class="main--slide-btn">
+              <button type="button" class="next__btn"></button>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- // main -->
       <div class="banner">
@@ -195,46 +198,44 @@
       <!-- //nav -->
       <!-- footer -->
       <div class="footer">
-        <ul class="footer--icons">
-          <li class="facebook--icon">
-            <a href="https://ko-kr.facebook.com/kukka.kr/"></a>
-          </li>
-          <li class="instagram--icon">
-            <a href="https://www.instagram.com/kukkakorea/"></a>
-          </li>
-          <li class="youtube--icon">
-            <a
-              href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"
-            ></a>
-          </li>
-        </ul>
-        <dl class="footer--service">
-          <dt>꾸까 고객센터</dt>
-          <dd>1661-1301</dd>
-          <dd>
-            운영시간 안내 :(평일 10:00 - 13:00, 14:00 - 18:00 / 주말 & 공휴일
-            제외)
-          </dd>
-          <dd>기업제휴 문의 : 070-4238-8251</dd>
-        </dl>
-        <button>뀨까 고객센터</button>
-        <dl class="footer--about">
-          <dt>꾸까 로고</dt>
-          <dd>상호명: 꾸까(kukka)</dd>
-          <dd>사업자 등록번호: 264-81-325**</dd>
-          <dd>대표자: 김영종</dd>
-          <dd>소재지: 서울시 서초구 남부순환로30길 10 kukka</dd>
-          <dd>기업공시</dd>
-          <dd>통신판매신고번호 2018-서울서초-1692</dd>
-          <dd>© 2014-2021 kukka, Inc. All rights reserved.</dd>
-        </dl>
-        <ul class="footer--terms">
-          <li><a href="/">이용약관</a></li>
-          <li><a href="/">개인정보 처리방침</a></li>
-          <li><a href="/">제휴안내</a></li>
-        </ul>
+        <div>
+          <ul class="footer--icons">
+            <li class="facebook--icon">
+              <a href="https://ko-kr.facebook.com/kukka.kr/"></a>
+            </li>
+            <li class="instagram--icon">
+              <a href="https://www.instagram.com/kukkakorea/"></a>
+            </li>
+            <li class="youtube--icon">
+              <a href="https://www.youtube.com/channel/UC_zQakXCUPvjcfsU067zyCQ?view_as=subscriber"></a>
+            </li>
+          </ul>
+          <dl class="footer--service">
+            <dt class="footer--service--title">꾸까 고객센터</dt>
+            <dt class="footer--service--title">1661-1301</dt>
+            <dt class="footer--service--contents">(평일 10:00 - 13:00, 14:00 - 18:00 / 주말 & 공휴일 제외)</dt>
+            <dd>기업제휴 문의 : 070-4238-8251</dd>
+          </dl>
+          <button class="service-btn">꾸까 고객센터 ></button>
+          <dl class="footer--about">
+            <dt>꾸까 로고</dt>
+            <dd>상호명: 꾸까(kukka) | </dd>
+            <dd>사업자 등록번호: 264-81-325** | </dd>
+            <dd class="end">대표자: 김영종</dd>
+            <br>
+            <dd>소재지: 서울시 서초구 남부순환로30길 10 kukka | </dd>
+            <dd>기업공시 | </dd>
+            <dd>통신판매신고번호 2018-서울서초-1692</dd>
+            <br>
+            <dd>© 2014-2021 kukka, Inc. All rights reserved.</dd>
+          </dl>
+          <ul class="footer--terms">
+            <li><a href="/">이용약관</a></li>
+            <li><a href="/">개인정보 처리방침</a></li>
+            <li><a href="/">제휴안내</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
     <!-- // wrap -->
   </body>
 </html>

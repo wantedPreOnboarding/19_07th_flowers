@@ -1,0 +1,164 @@
+.main--slide {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+.main--slide-btn {
+  display: inline-block;
+  position: absolute;
+  width: 70px;
+  height: 300px;
+}
+.main--slide-btn button {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 90px;
+  z-index: 1;
+}
+.main--slide-btn > .prev__btn {
+  position: absolute;
+  left: -65px;
+  background: url("../../assets/kukka.png") no-repeat -1166px -252px;
+}
+
+.main--slide-btn > .next__btn {
+  position: absolute;
+  background: url("../../assets/kukka.png") no-repeat -1116px -500px;
+  right: 10px;
+}
+
+.main--slide-btn.tablet {
+  right: 0;
+  top: -185px;
+}
+
+.main--slide-btn.tablet .next__btn {
+  top: 31%;
+}
+
+.main--slide-list {
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.slide--active {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-right: 10px;
+  position: relative;
+  min-height: 120px;
+  cursor: pointer;
+}
+
+.slide--active__imageBox {
+  overflow: hidden;
+}
+
+.slide__content--active {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+.slide__content--active span {
+  display: block;
+  font-size: 14px;
+  color: #424242;
+}
+.slide__content--active p {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.slide--next__imageBox {
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  display: inline-block;
+  min-height: 120px;
+  overflow: hidden;
+}
+.slide--active img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide--active img:hover {
+  width: 100.5%;
+  height: 100.5%;
+}
+.slide--next {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.slide--next hr {
+  color: #424242;
+}
+.slide--next-item {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.slide--next-seconditem {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+.slide--next__imageBox {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  min-height: 120px;
+  overflow: hidden;
+}
+
+.slide--next img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide--next img:hover {
+  width: 102%;
+  height: 102%;
+}
+
+.slide__content--info {
+  width: 50%;
+  height: 100%;
+  float: right;
+  min-height: 120px;
+  padding-left: 10px;
+}
+
+.slide__content--info h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.slide__content--info > span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tag__box {
+  padding-right: 10px;
+  word-break: keep-all;
+}
+.tag__box span {
+  font-size: 10px;
+  padding: 2px 5px;
+}
