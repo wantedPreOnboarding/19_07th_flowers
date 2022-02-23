@@ -51,7 +51,7 @@ $(document).ready(function() {
     $('.tag__box').append($span)
   }
 
-  var slideList = [{imageId:'0', imageName:'클래식 핸드타이드(1/1 ~ 1/15)'}, {imageId:'1', imageName:'들꽃 화병꽂이(1/10 ~ 1/16)'}, {imageId:'2',  imageName:'롬앤로우 센터피스 (1/17 ~ 1/23)'}]   
+  var slideList = [{imageId:'0', imageName:'클래식 핸드타이드(1/1 ~ 1/15)',url:'#1'}, {imageId:'1', imageName:'들꽃 화병꽂이(1/10 ~ 1/16)', url:'#2'}, {imageId:'2',  imageName:'롬앤로우 센터피스 (1/17 ~ 1/23)',url:'#3'}]   
   var state=1;
 
   function changeImage(first,second,third){
@@ -59,9 +59,12 @@ $(document).ready(function() {
     $('.slide--image2').attr('src','assets/slide_image'+second+'.jpeg'),
     $('.slide--image3').attr('src','assets/slide_image'+third+'.jpeg'),
     $('.slide__content--firstTitle').text(slideList[second].imageName),
-    $('.slide__content--secTitle').text(slideList[third].imageName)
+    $('.slide__content--secTitle').text(slideList[third].imageName),
+    $('.slide--active__href').attr('href','#'+first),
+    $('.slide--next__href-1').attr('href','#'+second),
+    $('.slide--next__href-2').attr('href','#'+third)
   }
-
+  
   $('.next__btn').click(function() {
     if (state ===2){
       changeImage(state,state-2,state-1),
