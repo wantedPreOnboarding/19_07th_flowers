@@ -33,11 +33,19 @@
     }
   });
 
+  $(window).resize(function () {
+    if ($(window).width() < breakpoints.tablet) {
+      headerMobileGroup();
+    } else {
+      headerDesktopGroup();
+    }
+  });
+
   //이동 애니메이션
-  $("a").click(function () {
+  $(".header--nav a").click(function () {
     $("html, body").animate(
       {
-        scrollTop: $($.attr(this, "href")).offset().top - 90,
+        scrollTop: $($.attr(this, "href")).offset().top,
       },
       500
     );
