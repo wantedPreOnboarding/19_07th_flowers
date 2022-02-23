@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>꾸까 | 팝업 이벤트</title>
     <link href="/css/config/reset.css" rel="stylesheet" />
     <link href="/css/common/theme.css" rel="stylesheet" />
     <link href="./popup.css" rel="stylesheet" />
@@ -15,11 +15,13 @@
     ></script>
     <script src="/js/config/module.js" defer></script>
     <script src="/js/utils/cssUnits.js" defer></script>
+    <script src="./js/slideIndexManager.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
     <div class="popup">
       <div class="popup-slide__wrapper">
+        <button class="popup-slide__btn--prev"></button>
         <ul>
           <li class="popup-slide__item">
             <img
@@ -40,10 +42,22 @@
             />
           </li>
         </ul>
+        <button class="popup-slide__btn--next"></button>
+        <div class="popup-slide__index-viewer">
+          <button class="bgc-red"></button>
+          <button class="bgc-grey"></button>
+          <button class="bgc-grey"></button>
+        </div>
       </div>
       <div class="popup__footer bgc-black fc-white">
-        <input type="checkbox" />
-        <span>오늘은 더 이상 보지 않기</span>
+        <input id="popup__close--option-check" type="checkbox" />
+        <label
+          for="popup__close--option-check"
+          class="popup__close--option-label"
+        >
+          오늘은 더 이상 보지 않기
+        </label>
+        <button class="popup__close fc-white"></button>
       </div>
     </div>
   </body>
