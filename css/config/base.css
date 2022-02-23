@@ -4,4 +4,5 @@
 body {
   font-family: "Noto Sans KR", sans-serif, NanumGothic, "나눔고딕", Dotum,
     "돋움", Helvetica, "Apple SD Gothic Neo";
+  overflow-x: hidden;
 }

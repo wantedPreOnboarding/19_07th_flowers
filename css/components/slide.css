@@ -5,15 +5,13 @@
   width: 100%;
   height: 100%;
   position: relative;
-  max-width: 1400px;
-  max-height: 480px;
   box-sizing: border-box;
   padding: 0px;
   margin-bottom: 50px;
 }
 .main--slide-btn {
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: 70px;
   height: 300px;
 }
@@ -21,15 +19,28 @@
   width: 68px;
   height: 68px;
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 90px;
+  z-index: 1;
 }
-.prev__btn {
+.main--slide-btn > .prev__btn {
+  position: absolute;
+  left: -65px;
   background: url("../../assets/kukka.png") no-repeat -1166px -252px;
 }
 
-.next__btn {
+.main--slide-btn > .next__btn {
+  position: absolute;
   background: url("../../assets/kukka.png") no-repeat -1116px -500px;
+  right: 10px;
+}
+
+.main--slide-btn.tablet {
+  right: 0;
+  top: -185px;
+}
+
+.main--slide-btn.tablet .next__btn {
+  top: 31%;
 }
 
 .main--slide-list {
@@ -48,6 +59,11 @@
   min-height: 120px;
   cursor: pointer;
 }
+
+.slide--active__imageBox {
+  overflow: hidden;
+}
+
 .slide__content--active {
   position: absolute;
   bottom: 20px;
@@ -78,8 +94,8 @@
 }
 
 .slide--active img:hover {
-  width: 102%;
-  height: 102%;
+  width: 100.5%;
+  height: 100.5%;
 }
 .slide--next {
   display: inline-block;
@@ -136,6 +152,11 @@
 .slide__content--info > span {
   font-size: 13px;
   font-weight: 700;
+}
+
+.tag__box {
+  padding-right: 10px;
+  word-break: keep-all;
 }
 .tag__box span {
   font-size: 10px;

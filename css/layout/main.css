@@ -9,12 +9,12 @@
 }
 
 section {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 60px 120px;
+  box-sizing: content-box;
 }
 
-section > h2 {
+section h2 {
   padding: 90px 0 40px;
   font-size: 30px;
   line-height: 45px;
