@@ -31,14 +31,16 @@
   float: left;
   width: 50%;
   min-height: 250px;
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png)
-    no-repeat center/cover;
+  background: url(/assets/banner_brand.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner--brand.mobile {
   width: 100%;
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/brand_201225.png)
-    no-repeat center/cover;
+  background: url(/assets/banner_brand.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner--brand > div {
@@ -74,8 +76,9 @@
 .banner--offline.mobile {
   display: none;
   width: 100%;
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/offline_201225_w.png)
-    no-repeat center/cover;
+  background: url(/assets/banner_show.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner--offline {
@@ -83,8 +86,9 @@
   float: right;
   width: 50%;
   min-height: 250px;
-  background: url(https://kukka-2-media-123.s3.amazonaws.com/media/class-name/ContentsTopBanner/2020/12/25/offline_201225_w.png)
-    no-repeat center/cover;
+  background: url(/assets/banner_show.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner--offline > div {
