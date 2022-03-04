@@ -8,13 +8,13 @@
   margin: 0 auto;
 }
 
-section {
+.section {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: content-box;
 }
 
-section h2 {
+.section h2 {
   padding: 90px 0 40px;
   font-size: 30px;
   line-height: 45px;
